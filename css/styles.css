@@ -56,8 +56,16 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*========= HEADER ========*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -101,6 +109,8 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .menu-link {
   color: inherit;
@@ -125,17 +135,22 @@ body {
 /*========= HERO ========*/
 .hero {
   background-color: var(--hero-footer-backgroud-color);
+  padding: 200px 0;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  padding-bottom: 30px;
 }
 .modal-button {
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -154,55 +169,120 @@ button {
 /*========= END HERO ========*/
 
 /*========= ADVANTAGES ========*/
+.advantages-title-container {
+  visibility: hidden;
+}
 .advantages-title {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantages-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.advantages-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.advantages {
+  padding-bottom: 0;
+}
 /*========= END ADVANTAGES ========*/
 
 /*========= GALLERY ========*/
 .gallery-title,
-.team-title-section {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.gallery-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 /*========= END GALLERY ========*/
 
 /*========= TEAM ========*/
-.team-title,
+.team {
+  background-color: var(--portfolio-button-color);
+}
+.team-title-item,
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-title {
+.team-title-item {
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--text-color);
 }
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.team-item-content {
+  display: block;
+  padding: 30px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 /*========= END TEAM ========*/
 
 /*========= PORTFOLIO ========*/
+.section-portfolio {
+  padding-top: 64px;
+  padding-bottom: 124px;
+}
+.portfolio-title {
+  visibility: hidden;
+}
 .portfolio-button {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  border-radius: 4px;
+  border: none;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--portfolio-button-color);
   cursor: pointer;
+  padding: 6px 22px;
+  margin-right: 8px;
+  margin-bottom: 50px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -215,6 +295,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--font-color);
+  margin-bottom: 4px;
 }
 .portfolio-jobs-text {
   font-size: 16px;
@@ -222,11 +303,36 @@ button {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-jobs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-jobs-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.portfolio-jobs-content {
+  display: block;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 /*========= END PORTFOLIO ========*/
 
 /*========= FOOTER ========*/
 .footer {
   background-color: var(--hero-footer-backgroud-color);
+  padding: 60px 0;
 }
 .logo-footer {
   font-family: var(--secondary-font);
@@ -240,11 +346,13 @@ button {
 .address {
   font-style: normal;
   font-size: inherit;
+  padding-top: 20px;
 }
 .address-link,
 .mail-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-bottom: 9px;
 }
 .address-link {
   color: var(--secondary-color);
