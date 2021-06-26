@@ -50,7 +50,38 @@ body {
   font-size: 14px;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*========= HEADER ========*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -58,6 +89,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-header-color);
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
 }
 .logo-part {
   color: var(--logo-part-color);
