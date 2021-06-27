@@ -307,7 +307,6 @@ address {
   background-color: var(--portfolio-button-color);
   cursor: pointer;
   padding: 6px 22px;
-  margin-right: 8px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -331,6 +330,7 @@ address {
 }
 .portfolio-item {
   margin-bottom: 50px;
+  margin-right: 8px;
 }
 .portfolio-list {
   display: flex;
