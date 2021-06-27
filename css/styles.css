@@ -78,6 +78,9 @@ address {
     /* or */
     font-style: inherit;
 }
+
+/* Класс чтобы визуально спрятать элементы */
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
