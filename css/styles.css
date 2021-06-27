@@ -8,10 +8,12 @@
   --logo-header-color: #000000;
   --logo-part-color: #2196f3;
   --text-color: #757575;
-  --hero-footer-backgroud-color: #2f303a;
+  --hero-footer-background-color: #2f303a;
   --button-background-color: #188ce8;
   --portfolio-button-color: #f5f4fa;
   --mail-link-color: rgba(255, 255, 255, 0.6);
+  --border-header: #ececec;
+  --border-portfolio: #eeeeee;
 }
 
 body {
@@ -94,32 +96,23 @@ address {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-header);
 }
-.header-container {
+.header-container,
+.navigation,
+.menu,
+.contacts,
+.logo {
   display: flex;
   align-items: center;
 }
-.navigation {
-  display: flex;
-  align-items: center;
-}
-.menu {
-  display: flex;
-  align-items: center;
-}
-.menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-.contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
+.menu-item,
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.contacts {
+  margin-left: auto;
+}
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -127,8 +120,6 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-header-color);
-  display: flex;
-  align-items: center;
   margin-right: 93px;
 }
 .logo-part {
@@ -164,7 +155,7 @@ address {
 
 /*========= HERO ========*/
 .hero {
-  background-color: var(--hero-footer-backgroud-color);
+  background-color: var(--hero-footer-background-color);
   padding: 200px 0;
   text-align: center;
 }
@@ -174,7 +165,7 @@ address {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
@@ -201,13 +192,13 @@ address {
 /*========= ADVANTAGES ========*/
 .advantages-title {
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .advantages-text {
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 0;
@@ -350,15 +341,15 @@ address {
 .portfolio-jobs-content {
   display: block;
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-left: 1px solid var(--border-portfolio);
 }
 /*========= END PORTFOLIO ========*/
 
 /*========= FOOTER ========*/
 .footer {
-  background-color: var(--hero-footer-backgroud-color);
+  background-color: var(--hero-footer-background-color);
   padding: 60px 0;
 }
 .logo-footer {
@@ -379,7 +370,7 @@ address {
 }
 .address-link,
 .mail-link {
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 }
 .address-link {
