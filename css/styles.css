@@ -195,6 +195,7 @@ address {
 }
 .modal-button {
   border-radius: 4px;
+  border: none;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -207,9 +208,6 @@ address {
 .modal-button:hover,
 .modal-button:focus {
   background-color: var(--button-background-color);
-}
-button {
-  font-family: inherit;
 }
 /*========= END HERO ========*/
 
@@ -321,8 +319,7 @@ button {
   cursor: pointer;
   padding: 6px 22px;
   margin-right: 8px;
-  margin-bottom: 50px;
-}
+  }
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--secondary-color);
@@ -334,17 +331,20 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--font-color);
-  margin-bottom: 4px;
-}
+  }
 .portfolio-jobs-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.portfolio-item {
+margin-bottom: 4px;
+}
 .portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-jobs-list {
   display: flex;
