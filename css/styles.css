@@ -29,44 +29,44 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Класс для обнуления базовых свойств у списков (ul, ol) */
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Класс для обнуления базовых свойств у ссылок */
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Класс для обнуления базовых свойств у кнопки */
 .button {
-    border: none;
-    background: transparent;
-    color: inherit;
-    font-family: inherit;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 /* Свойства для корректного отображения картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Свойства для обнуления курсива у address */
 
 address {
-    font-style: normal;
-    /* or */
-    font-style: inherit;
+  font-style: normal;
+  /* or */
+  font-style: inherit;
 }
 
 /* Класс чтобы визуально спрятать элементы */
@@ -77,7 +77,6 @@ address {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
 
 /*======= Components ========*/
@@ -172,7 +171,7 @@ address {
   text-align: center;
 }
 .hero .container {
-    width: 696px;
+  width: 696px;
 }
 .hero-title {
   font-weight: 900;
@@ -213,6 +212,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 0;
 }
 .advantages-list {
   display: flex;
@@ -261,7 +261,7 @@ address {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-   letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 .team-title-item {
   font-weight: 500;
@@ -269,13 +269,14 @@ address {
 }
 .team-text {
   color: var(--text-color);
+  margin-bottom: 0;
 }
 .team-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-   text-align: center;
+  text-align: center;
 }
 .team-item {
   flex-basis: calc((100% - 120px) / 4);
@@ -283,7 +284,7 @@ address {
   margin-top: 30px;
 }
 .team-item-content {
-   padding: 30px 0;
+  padding: 30px 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -309,7 +310,7 @@ address {
   cursor: pointer;
   padding: 6px 22px;
   margin-right: 8px;
-  }
+}
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--secondary-color);
@@ -321,7 +322,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--font-color);
-  }
+}
 .portfolio-jobs-text {
   font-size: 16px;
   line-height: 1.88;
@@ -329,20 +330,17 @@ address {
   color: var(--text-color);
 }
 .portfolio-item {
-margin-bottom: 4px;
+  margin-bottom: 50px;
 }
 .portfolio-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 .portfolio-jobs-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding: 0;
-  margin: 0;
 }
 .portfolio-jobs-item {
   flex-basis: calc((100% - 90px) / 3);
@@ -377,11 +375,13 @@ margin-bottom: 4px;
   font-size: inherit;
   margin-top: 20px;
 }
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .address-link,
 .mail-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 .address-link {
   color: var(--secondary-color);
