@@ -21,12 +21,6 @@ body {
   font-size: 14px;
 }
 
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
