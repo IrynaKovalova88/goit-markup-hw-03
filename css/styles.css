@@ -181,6 +181,9 @@ address {
   padding: 200px 0;
   text-align: center;
 }
+.hero .container {
+    width: 696px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -188,7 +191,7 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .modal-button {
   border-radius: 4px;
