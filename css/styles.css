@@ -320,12 +320,12 @@ address {
   margin-bottom: 0;
 }
 .portfolio-item {
-  margin-bottom: 50px;
   margin-right: 8px;
 }
 .portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-jobs-list {
   display: flex;
